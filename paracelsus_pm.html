@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My 3D Model Viewer</title>
+    <!-- Import the Google Model Viewer script -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.4.0/model-viewer.min.js"></script>
+    <style>
+        body { margin: 0; padding: 0; background-color: #f0f0f0; display: flex; justify-content: center; align-items: center; height: 100vh; }
+        model-viewer { width: 100%; height: 90vh; }
+    </style>
+</head>
+<body>
+
+    <!-- Change "model.glb" below to match your exact uploaded file name -->
+    <model-viewer 
+        src="smoothed_horizontal_terrain_pm.glb" 
+        ar 
+        camera-controls 
+        touch-action="pan-y" 
+        shadow-intensity="1" 
+        autoplay>
+    </model-viewer>
+
+</body>
+</html>
